@@ -12,6 +12,7 @@ class ListCell: UITableViewCell {
 
     @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
     
     
     override func awakeFromNib() {
@@ -26,6 +27,7 @@ class ListCell: UITableViewCell {
     func setCell(imageName: String, imageTitle: String) {
         iconImage.image = UIImage(named: imageName)
         titleLabel.text = imageTitle
+        // numberLabel.text = String(imageNumber)
     }
 }
 

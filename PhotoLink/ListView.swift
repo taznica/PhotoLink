@@ -67,7 +67,7 @@ class ListView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.navigationItem.rightBarButtonItem = self.editButtonItem()
+//        self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     override func didReceiveMemoryWarning() {
@@ -90,5 +90,41 @@ class ListView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.setCell(imageNames[indexPath.row], imageTitle: imageTitles[indexPath.row])
         
         return cell
+    }
+    
+    // Buttonを拡張する.
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        
+        /*
+        // Shareボタン.
+        let myShareButton: UITableViewRowAction = UITableViewRowAction(style: .Normal, title: "Share") { (action, index) -> Void in
+            
+            tableView.editing = false
+            print("share")
+            
+        }
+        myShareButton.backgroundColor = UIColor.blueColor()
+        
+        // Archiveボタン.
+        let myArchiveButton: UITableViewRowAction = UITableViewRowAction(style: .Normal, title: "Archive") { (action, index) -> Void in
+            
+            tableView.editing = false
+            print("archive")
+            
+        }
+        myArchiveButton.backgroundColor = UIColor.grayColor()
+        */
+        
+        // Deleteボタン.
+        let myDeleteButton: UITableViewRowAction = UITableViewRowAction(style: .Normal, title: "Delete") { (action, index) -> Void in
+            
+            tableView.editing = false
+            print("delete")
+            
+        }
+        myDeleteButton.backgroundColor = UIColor.redColor()
+        
+        return [myDeleteButton]
+        
     }
 }

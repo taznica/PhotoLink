@@ -51,13 +51,20 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCa-fQ-gRI">
+                                                    <rect key="frame" x="116" y="68" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9E4-Nr-Aem">
-                                                    <rect key="frame" x="8" y="5" width="90" height="90"/>
+                                                    <rect key="frame" x="0.0" y="-1" width="100" height="100"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="iconImage" destination="9E4-Nr-Aem" id="Two-cq-5aV"/>
+                                            <outlet property="numberLabel" destination="mCa-fQ-gRI" id="fT4-FM-XMl"/>
                                             <outlet property="titleLabel" destination="EYf-vg-j6j" id="68X-n4-8rx"/>
                                         </connections>
                                     </tableViewCell>
