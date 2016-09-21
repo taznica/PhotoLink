@@ -21,5 +21,11 @@ class ListCell: UITableViewCell {
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    
+    func setCell(imageName: String, imageTitle: String) {
+        iconImage.image = UIImage(named: imageName)
+        titleLabel.text = imageTitle
+    }
 }
 

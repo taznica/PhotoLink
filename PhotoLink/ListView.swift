@@ -87,8 +87,7 @@ class ListView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! ListCell
         
         // セルに値を設定
-        cell.iconImage.image = UIImage(named: imageNames[indexPath.row])
-        cell.titleLabel.text = imageTitles[indexPath.row]
+        cell.setCell(imageNames[indexPath.row], imageTitle: imageTitles[indexPath.row])
         
         return cell
     }
