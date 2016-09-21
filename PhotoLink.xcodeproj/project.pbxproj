@@ -19,6 +19,8 @@
 		87507B281D9252B200EB21E6 /* mose_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 87507B251D9252B200EB21E6 /* mose_3.png */; };
 		87507B2B1D92540400EB21E6 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87507B2A1D92540400EB21E6 /* ListView.swift */; };
 		87507B2D1D925DDE00EB21E6 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87507B2C1D925DDE00EB21E6 /* ListCell.swift */; };
+		87507B331D92A5AA00EB21E6 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87507B321D92A5AA00EB21E6 /* GridView.swift */; };
+		87507B371D92AC0700EB21E6 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87507B361D92AC0700EB21E6 /* GridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		87507B251D9252B200EB21E6 /* mose_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mose_3.png; sourceTree = "<group>"; };
 		87507B2A1D92540400EB21E6 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		87507B2C1D925DDE00EB21E6 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		87507B321D92A5AA00EB21E6 /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		87507B361D92AC0700EB21E6 /* GridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				87507AE51D8F92F600EB21E6 /* AppDelegate.swift */,
 				87507B2A1D92540400EB21E6 /* ListView.swift */,
 				87507B2C1D925DDE00EB21E6 /* ListCell.swift */,
+				87507B321D92A5AA00EB21E6 /* GridView.swift */,
+				87507B361D92AC0700EB21E6 /* GridCell.swift */,
 				87507B171D8F998E00EB21E6 /* PhotoView.swift */,
 				87507AE91D8F92F600EB21E6 /* Main.storyboard */,
 				87507B231D9252B200EB21E6 /* mose_1.png */,
@@ -279,7 +285,9 @@
 			files = (
 				87507B181D8F998E00EB21E6 /* PhotoView.swift in Sources */,
 				87507B2D1D925DDE00EB21E6 /* ListCell.swift in Sources */,
+				87507B371D92AC0700EB21E6 /* GridCell.swift in Sources */,
 				87507AE61D8F92F600EB21E6 /* AppDelegate.swift in Sources */,
+				87507B331D92A5AA00EB21E6 /* GridView.swift in Sources */,
 				87507B2B1D92540400EB21E6 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

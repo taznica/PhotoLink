@@ -84,7 +84,7 @@ class ListView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     /// セルに値を設定するデータソースメソッド（必須）
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // セルを取得
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! ListCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("listCell") as! ListCell
         
         // セルに値を設定
         cell.setCell(imageNames[indexPath.row], imageTitle: imageTitles[indexPath.row])
@@ -94,26 +94,6 @@ class ListView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // Buttonを拡張する.
     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
-        
-        /*
-        // Shareボタン.
-        let myShareButton: UITableViewRowAction = UITableViewRowAction(style: .Normal, title: "Share") { (action, index) -> Void in
-            
-            tableView.editing = false
-            print("share")
-            
-        }
-        myShareButton.backgroundColor = UIColor.blueColor()
-        
-        // Archiveボタン.
-        let myArchiveButton: UITableViewRowAction = UITableViewRowAction(style: .Normal, title: "Archive") { (action, index) -> Void in
-            
-            tableView.editing = false
-            print("archive")
-            
-        }
-        myArchiveButton.backgroundColor = UIColor.grayColor()
-        */
         
         // Deleteボタン.
         let myDeleteButton: UITableViewRowAction = UITableViewRowAction(style: .Normal, title: "Delete") { (action, index) -> Void in
@@ -125,6 +105,5 @@ class ListView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         myDeleteButton.backgroundColor = UIColor.redColor()
         
         return [myDeleteButton]
-        
     }
 }
