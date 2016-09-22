@@ -57,10 +57,10 @@ class ListView: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
 class ListView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     /// 画像のファイル名
-    let imageNames = ["mose_1.png", "mose_2.png", "mose_3.png"]
+    let imageNames = ["mose_1.png"]
     
     /// 画像のタイトル
-    let imageTitles = ["one", "two", "three"]
+    let imageTitles = ["one"]
     
     
     override func viewDidLoad() {
@@ -106,4 +106,10 @@ class ListView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         return [myDeleteButton]
     }
+    
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        
+//        let cell = tableView.dequeueReusableCellWithIdentifier("listCell") as! ListCell
+////        let imageName = 
+//    }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoView: UIViewController {
+class PhotoView: UIViewController { //, UICollectionViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,8 @@ class PhotoView: UIViewController {
     }
     
 
+    
+    
     /*
     // MARK: - Navigation
 
